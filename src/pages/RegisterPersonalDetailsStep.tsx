@@ -3,12 +3,15 @@ import { Input, Select } from "@mantine/core";
 export default function RegisterPersonalDetailsStep() {
     return (
         <>
+            <div className="flex flex-col items-start justify-center">
+                <h1 className="text-xl font-bold">Sobre Você</h1>
+            </div>
             <div className="flex items-center justify-between w-full gap-4">
                 <Input.Wrapper className="w-full" label="Idade">
                     <Input type="number" placeholder="18" />
                 </Input.Wrapper>
                 <Input.Wrapper className="w-full" label="Gênero">
-                    <Select placeholder="Homem" data={["Homem", "Mulher", "Outro", "Prefiro não dizer"]} />
+                    <Select placeholder="Homem" data={["Homem", "Mulher", "Prefiro não dizer"]} />
                 </Input.Wrapper>
             </div>
             <div className="flex items-center justify-between w-full gap-4">

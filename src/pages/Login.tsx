@@ -1,8 +1,10 @@
 import { Anchor, Button, Checkbox, Input, PasswordInput } from "@mantine/core";
 import { FaGoogle } from "react-icons/fa"
 import HeroWorkout from "../assets/workout_hero.png"
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+    const navigate = useNavigate();
     return (
         <div className="w-full min-h-screen flex items-center justify-center">
             <div className="w-full h-full flex items-center justify-center flex-col gap-8">
@@ -45,7 +47,7 @@ export default function Login() {
                 </form>
                 <div className="flex items-center justify-center gap-2 text-slate-500 text-sm">
                     <span>Não tem uma conta ?</span>
-                    <Anchor style={{
+                    <Anchor onClick={() => navigate("/auth/register")} style={{
                         fontSize: '0.875rem'
                     }}>Criar conta</Anchor>
                 </div>

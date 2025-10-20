@@ -22,13 +22,9 @@ export const theme = createTheme({
     components: {
         Button: {
             defaultProps: {
-                size: 'md',
-                radius: 'md',
-                gradient: {
-                    from: 'blue.5',
-                    to: 'blue.2',
-                    deg: 45,
-                },
+                size: 'sm',
+                radius: 'sm',
+                gradient: { from: "#2563eb", to: "#45bbed", deg: 90 },
             }
         },
         Input: {

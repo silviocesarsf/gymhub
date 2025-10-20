@@ -6,6 +6,7 @@ import Login from './pages/Login.tsx';
 import { theme } from './theme.ts';
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Register from './pages/Register.tsx';
+import RegisterCompleted from './pages/RegisterCompleted.tsx';
 
 createRoot(document.getElementById('root')!).render(
     <MantineProvider
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')!).render(
             <Routes>
                 <Route Component={Login} path='/auth/login' />
                 <Route Component={Register} path='/auth/register' />
+                <Route Component={RegisterCompleted} path='/auth/register/completed' />
             </Routes>
         </BrowserRouter>
     </MantineProvider>

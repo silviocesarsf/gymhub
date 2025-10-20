@@ -3,10 +3,11 @@ import { useState } from "react";
 
 interface CardCheckboxProps {
     title: string,
-    description: string,
-    isChecked?: boolean
+    description?: string,
+    isChecked?: boolean,
+    emoticon?: string
 }
-export default function CardCheckbox({ title, description, isChecked = false }: CardCheckboxProps) {
+export default function CardCheckbox({ title, description, isChecked = false, emoticon }: CardCheckboxProps) {
     const [checked, setChecked] = useState<boolean>(isChecked);
     return (
         <Checkbox.Card
@@ -20,11 +21,18 @@ export default function CardCheckbox({ title, description, isChecked = false }: 
         >
             <Group wrap="nowrap" align="center">
                 <Checkbox.Indicator />
-                <div>
-                    <h1>{title}</h1>
-                    <p className="text-xs text-slate-500">
-                        {description}
-                    </p>
+                <div className="flex items-center justify-between w-full">
+                    <div>
+                        <h1>{title}</h1>
+                        <p className="text-xs text-slate-500">
+                            {description}
+                        </p>
+                    </div>
+                    {
+                        emoticon && (
+                            <p className="text-2xl">{emoticon}</p>
+                        )
+                    }
                 </div>
             </Group>
         </Checkbox.Card>

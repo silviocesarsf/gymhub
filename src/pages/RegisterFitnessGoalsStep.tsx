@@ -4,7 +4,7 @@ import CardCheckbox from "../components/CardCheckbox";
 export default function RegisterFitnessGoalsStep() {
     return (
         <>
-            <div className="flex flex-col items-start justify-center gap-2">
+            <div className="flex flex-col items-start justify-center">
                 <h1 className="text-xl font-bold">Metas</h1>
                 <p className="text-sm text-slate-500">O que você espera alcançar? (Selecione todas as opções aplicáveis)</p>
             </div>
