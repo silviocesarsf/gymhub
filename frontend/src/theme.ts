@@ -1,4 +1,4 @@
-import { createTheme, type MantineTheme } from "@mantine/core";
+import { createTheme, InputWrapper, type MantineTheme } from "@mantine/core";
 
 const bluePalette = [
     "#e6f2ff",
@@ -18,8 +18,27 @@ export const theme = createTheme({
     primaryColor: "blue",
     colors: {
         blue: bluePalette,
+        error: [
+            "#fff5f5",
+            "#ffe3e3",
+            "#ffc9c9",
+            "#ffa8a8",
+            "#ff8787",
+            "#ff6b6b",
+            "#fa5252",
+            "#e03131",
+            "#bf2a2a",
+            "#992525",
+        ],
     },
     components: {
+        InputWrapper: {
+            styles: {
+                error: {
+                    marginTop: "6px"
+                }
+            }
+        },
         Button: {
             defaultProps: {
                 size: 'sm',

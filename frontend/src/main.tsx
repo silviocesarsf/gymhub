@@ -6,7 +6,7 @@ import Login from './pages/Login.tsx';
 import { theme } from './theme.ts';
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Register from './pages/Register.tsx';
-import RegisterCompleted from './pages/RegisterCompleted.tsx';
+import RegisterCompleted from './features/register/components/RegisterCompleted.tsx';
 
 createRoot(document.getElementById('root')!).render(
     <MantineProvider

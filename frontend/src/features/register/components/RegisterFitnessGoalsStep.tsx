@@ -1,13 +1,9 @@
 import { ScrollArea } from "@mantine/core";
-import CardCheckbox from "../components/CardCheckbox";
+import CardCheckbox from "../../../components/CardCheckbox";
 
 export default function RegisterFitnessGoalsStep() {
     return (
         <>
-            <div className="flex flex-col items-start justify-center">
-                <h1 className="text-xl font-bold">Metas</h1>
-                <p className="text-sm text-slate-500">O que você espera alcançar? (Selecione todas as opções aplicáveis)</p>
-            </div>
             <ScrollArea h={350}>
                 <div className="flex items-center justify-center flex-col w-full gap-2">
                     <CardCheckbox title="Perder peso" description="Queime gordura e alcance um peso mais saudável" />

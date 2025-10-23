@@ -1,13 +1,9 @@
 import { ScrollArea } from "@mantine/core"
-import CardCheckbox from "../components/CardCheckbox"
+import CardCheckbox from "../../../components/CardCheckbox"
 
 export default function RegisterExercisesPreferences() {
     return (
         <>
-            <div className="flex flex-col items-start justify-center mb-4">
-                <h1 className="text-xl font-bold">Preferências de exercícios</h1>
-                <p className="text-sm text-slate-500">Quais tipos de exercícios você mais gosta?</p>
-            </div>
             <ScrollArea h={350}>
                 <div className="space-y-6">
                     {/* Força e Condicionamento */}
